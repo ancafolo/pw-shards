@@ -80,7 +80,7 @@ jobs:
         with:
           allure-endpoint: https://demo.testops.cloud
           allure-token: ${{ secrets.DEMO_ALLURE_TOKEN }}
-          allure-project-id: 5030
+          allure-project-id: 5525
 
       - name: Pause before non-chromium run
         if: matrix.browser != 'chromium'
