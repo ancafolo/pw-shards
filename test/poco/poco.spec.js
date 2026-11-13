@@ -436,7 +436,7 @@ test("Assert a tuple poco 047 001", async () => {
 });
 
 test("Assert a tuple poco 048 001", async () => {
-  await setup({ layer: "api", owner: "bugsbunny" });
+  await setup({ layer: "data", owner: "bugsbunny" });
   await allure.feature("load testing test results processing");
   await allure.story("un poco de api tests to this project");
   await allure.label("tracker", "AD-4");
@@ -445,7 +445,7 @@ test("Assert a tuple poco 048 001", async () => {
 });
 
 test("Assert a tuple poco 049 001", async () => {
-  await setup({ layer: "api", owner: "bugsbunny" });
+  await setup({ layer: "data", owner: "bugsbunny" });
   await allure.feature("load testing test results processing");
   await allure.story("un poco de api tests to this project");
   await allure.label("tracker", "AD-5");
@@ -454,7 +454,7 @@ test("Assert a tuple poco 049 001", async () => {
 });
 
 test("Assert a tuple poco 050 001", async () => {
-  await setup({ layer: "api", owner: "bugsbunny" });
+  await setup({ layer: "data", owner: "bugsbunny" });
   await allure.feature("load testing test results processing");
   await allure.story("un poco de api tests to this project");
   await allure.label("tracker", "AD-6");
@@ -463,7 +463,7 @@ test("Assert a tuple poco 050 001", async () => {
 });
 
 test("Assert a tuple poco 051 001", async () => {
-  await setup({ layer: "api", owner: "bugsbunny" });
+  await setup({ layer: "data", owner: "bugsbunny" });
   await allure.feature("load testing test results processing");
   await allure.story("un poco de api tests to this project");
   await allure.label("tracker", "AD-7");
@@ -490,7 +490,7 @@ test("Assert a tuple poco 053 001", async () => {
 });
 
 test("Assert a tuple poco 054 001", async () => {
-  await setup({ layer: "api", owner: "bugsbunny" });
+  await setup({ layer: "data", owner: "bugsbunny" });
   await allure.feature("load testing test results processing");
   await allure.story("un poco de api tests to this project");
   await allure.label("tracker", "AD-11");
@@ -517,7 +517,7 @@ test("Assert a tuple poco 056 001", async () => {
 });
 
 test("Assert a tuple poco 057 001", async () => {
-  await setup({ layer: "api", owner: "bugsbunny" });
+  await setup({ layer: "data", owner: "bugsbunny" });
   await allure.feature("load testing test results processing");
   await allure.story("un poco de api tests to this project");
   await allure.label("tracker", "AD-3");
@@ -589,7 +589,7 @@ test("Assert a tuple poco 064 001", async () => {
 });
 
 test("Assert a tuple poco 065 001", async () => {
-  await setup({ layer: "api", owner: "bugsbunny" });
+  await setup({ layer: "data", owner: "bugsbunny" });
   await allure.feature("load testing test results processing");
   await allure.story("un poco de api tests to this project");
   await allure.label("tracker", "AD-1");
@@ -598,7 +598,7 @@ test("Assert a tuple poco 065 001", async () => {
 });
 
 test("Assert a tuple poco 066 001", async () => {
-  await setup({ layer: "api", owner: "bugsbunny" });
+  await setup({ layer: "data", owner: "bugsbunny" });
   await allure.feature("load testing test results processing");
   await allure.story("un poco de api tests to this project");
   await allure.label("tracker", "AD-2");
@@ -607,7 +607,7 @@ test("Assert a tuple poco 066 001", async () => {
 });
 
 test("Assert a tuple poco 067 001", async () => {
-  await setup({ layer: "api", owner: "bugsbunny" });
+  await setup({ layer: "data", owner: "bugsbunny" });
   await allure.feature("load testing test results processing");
   await allure.story("un poco de api tests to this project");
   await allure.label("tracker", "AD-3");
