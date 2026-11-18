@@ -3,3 +3,5 @@ node_modules
 test-results/
 allure-results/
 playwright-report/
+allure-report/
+playwright-report/
