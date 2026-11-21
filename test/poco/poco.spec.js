@@ -2,6 +2,14 @@ const { test, expect } = require("@playwright/test");
 const allure = require("allure-js-commons");
 const { setup, assertStep, shouldFail } = require("../allureHelpers");
 
+// Data sets for the parametrised "Pay by credit card" test.
+// Each entry produces its own Playwright test -> its own TestOps test case.
+// No allure.id on purpose: TestOps creates a new test case for each entry.
+const paymentCards = [
+  { card: "Visa", cardNumber: "4111 1111 1111 1111" },
+  { card: "Mastercard", cardNumber: "5555 5555 5555 4444" },
+];
+
 test("Assert a tuple poco 001 001", async () => {
   await setup({ layer: "api", owner: "bugsbunny" });
   await allure.feature("product catalog");
@@ -46,15 +54,19 @@ test("Assert a tuple poco 003 001", async () => {
   await assertStep("Assert 123 versus 123", "ODD");
 });
 
-test("Assert a tuple poco 004 001", async () => {
-  await setup({ layer: "e2e", owner: "bugsbunny" });
-  await allure.feature("checkout");
-  await allure.story("Pay by credit card");
-  await allure.label("tracker", "AD-4");
-  await allure.label("microservice", "cart");
-  await assertStep("Assert 123 versus 123", "ODD");
-  await assertStep("Assert 123 versus 123", "EVEN");
-});
+for (const { card, cardNumber } of paymentCards) {
+  test(`Pay by credit card with ${card}`, async () => {
+    await setup({ layer: "e2e", owner: "bugsbunny" });
+    await allure.feature("checkout");
+    await allure.story("Pay by credit card");
+    await allure.label("tracker", "AD-4");
+    await allure.label("microservice", "cart");
+    await allure.parameter("card", card);
+    await allure.parameter("cardNumber", cardNumber);
+    await assertStep(`Pay with ${card}`, "ODD");
+    await assertStep(`Confirm ${card} payment`, "EVEN");
+  });
+}
 
 test("Assert a tuple poco 005 001", async () => {
   await setup({ layer: "e2e", owner: "bugsbunny" });
