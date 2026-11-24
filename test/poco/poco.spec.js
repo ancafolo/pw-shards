@@ -3,10 +3,6 @@ const allure = require("allure-js-commons");
 const { setup, assertStep, shouldFail } = require("../allureHelpers");
 
 
-const paymentCards = [
-  { card: "Visa", cardNumber: "4111 1111 1111 1111" },
-  { card: "Mastercard", cardNumber: "5555 5555 5555 4444" },
-];
 
 test("Assert a tuple poco 001 001", async () => {
   await setup({ layer: "web", owner: "jane", feature: "product catalog" });
@@ -55,9 +51,16 @@ test("Assert a tuple poco 003 001", async () => {
   await assertStep("Assert 123 versus 123", "EVEN");
 });
 
+const paymentCards = [
+  { card: "Visa", cardNumber: "4111 1111 1111 1111" },
+  { card: "Mastercard", cardNumber: "5555 5555 5555 4444" },
+];
+
 for (const { card, cardNumber } of paymentCards) {
-  test(`Pay by credit card with ${card}`, async () => {
+  test(`Pay by credit card (${card})`, async () => {
     await setup({ layer: "web", owner: "john", feature: "checkout" });
+    await allure.displayName("Pay by credit card");
+    await allure.testCaseId("pay-by-credit-card");
     await allure.feature("checkout");
     await allure.story("Pay by credit card");
     await allure.tag("e2e");
@@ -65,8 +68,8 @@ for (const { card, cardNumber } of paymentCards) {
     await allure.label("microservice", "cart");
     await allure.parameter("card", card);
     await allure.parameter("cardNumber", cardNumber);
-    await assertStep(`Pay with ${card}`, "ODD");
-    await assertStep(`Confirm ${card} payment`, "EVEN");
+    await assertStep("Pay with card", "ODD");
+    await assertStep("Confirm card payment", "EVEN");
   });
 }
 
