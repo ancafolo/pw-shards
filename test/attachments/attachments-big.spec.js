@@ -8,7 +8,7 @@ const res = (name) => path.join(__dirname, "..", "resources", name);
 const maybe = () => Math.random() < 0.5;
 
 test("Sending 8 Mb attachments _001", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -45,7 +45,7 @@ test("Sending 8 Mb attachments _001", async () => {
 });
 
 test("Sending 8 Mb attachments _002", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -82,7 +82,7 @@ test("Sending 8 Mb attachments _002", async () => {
 });
 
 test("Sending 8 Mb attachments _003", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -119,7 +119,7 @@ test("Sending 8 Mb attachments _003", async () => {
 });
 
 test("Sending 8 Mb attachments _004", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -156,7 +156,7 @@ test("Sending 8 Mb attachments _004", async () => {
 });
 
 test("Sending 8 Mb attachments _005", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -193,7 +193,7 @@ test("Sending 8 Mb attachments _005", async () => {
 });
 
 test("Sending 8 Mb attachments _006", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -230,7 +230,7 @@ test("Sending 8 Mb attachments _006", async () => {
 });
 
 test("Sending 8 Mb attachments _007", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -267,7 +267,7 @@ test("Sending 8 Mb attachments _007", async () => {
 });
 
 test("Sending 8 Mb attachments _008", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -304,7 +304,7 @@ test("Sending 8 Mb attachments _008", async () => {
 });
 
 test("Sending 8 Mb attachments _009", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -341,7 +341,7 @@ test("Sending 8 Mb attachments _009", async () => {
 });
 
 test("Sending 8 Mb attachments _010", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -378,7 +378,7 @@ test("Sending 8 Mb attachments _010", async () => {
 });
 
 test("Sending 8 Mb attachments _011", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -415,7 +415,7 @@ test("Sending 8 Mb attachments _011", async () => {
 });
 
 test("Sending 8 Mb attachments _012", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -452,7 +452,7 @@ test("Sending 8 Mb attachments _012", async () => {
 });
 
 test("Sending 8 Mb attachments _013", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -489,7 +489,7 @@ test("Sending 8 Mb attachments _013", async () => {
 });
 
 test("Sending 8 Mb attachments _014", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -526,7 +526,7 @@ test("Sending 8 Mb attachments _014", async () => {
 });
 
 test("Sending 8 Mb attachments _015", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -563,7 +563,7 @@ test("Sending 8 Mb attachments _015", async () => {
 });
 
 test("Sending 8 Mb attachments _016", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -600,7 +600,7 @@ test("Sending 8 Mb attachments _016", async () => {
 });
 
 test("Sending 8 Mb attachments _017", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -637,7 +637,7 @@ test("Sending 8 Mb attachments _017", async () => {
 });
 
 test("Sending 8 Mb attachments _018", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -674,7 +674,7 @@ test("Sending 8 Mb attachments _018", async () => {
 });
 
 test("Sending 8 Mb attachments _019", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -711,7 +711,7 @@ test("Sending 8 Mb attachments _019", async () => {
 });
 
 test("Sending 8 Mb attachments _020", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -748,7 +748,7 @@ test("Sending 8 Mb attachments _020", async () => {
 });
 
 test("Sending 8 Mb attachments _021", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -785,7 +785,7 @@ test("Sending 8 Mb attachments _021", async () => {
 });
 
 test("Sending 8 Mb attachments _022", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -822,7 +822,7 @@ test("Sending 8 Mb attachments _022", async () => {
 });
 
 test("Sending 8 Mb attachments _023", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -859,7 +859,7 @@ test("Sending 8 Mb attachments _023", async () => {
 });
 
 test("Sending 8 Mb attachments _024", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -896,7 +896,7 @@ test("Sending 8 Mb attachments _024", async () => {
 });
 
 test("Sending 8 Mb attachments _025", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -933,7 +933,7 @@ test("Sending 8 Mb attachments _025", async () => {
 });
 
 test("Sending 8 Mb attachments _026", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -970,7 +970,7 @@ test("Sending 8 Mb attachments _026", async () => {
 });
 
 test("Sending 8 Mb attachments _027", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1007,7 +1007,7 @@ test("Sending 8 Mb attachments _027", async () => {
 });
 
 test("Sending 8 Mb attachments _028", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1044,7 +1044,7 @@ test("Sending 8 Mb attachments _028", async () => {
 });
 
 test("Sending 8 Mb attachments _029", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1081,7 +1081,7 @@ test("Sending 8 Mb attachments _029", async () => {
 });
 
 test("Sending 8 Mb attachments _030", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1118,7 +1118,7 @@ test("Sending 8 Mb attachments _030", async () => {
 });
 
 test("Sending 8 Mb attachments _031", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1155,7 +1155,7 @@ test("Sending 8 Mb attachments _031", async () => {
 });
 
 test("Sending 8 Mb attachments _032", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1192,7 +1192,7 @@ test("Sending 8 Mb attachments _032", async () => {
 });
 
 test("Sending 8 Mb attachments _033", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1229,7 +1229,7 @@ test("Sending 8 Mb attachments _033", async () => {
 });
 
 test("Sending 8 Mb attachments _034", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1266,7 +1266,7 @@ test("Sending 8 Mb attachments _034", async () => {
 });
 
 test("Sending 8 Mb attachments _035", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1303,7 +1303,7 @@ test("Sending 8 Mb attachments _035", async () => {
 });
 
 test("Sending 8 Mb attachments _036", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1340,7 +1340,7 @@ test("Sending 8 Mb attachments _036", async () => {
 });
 
 test("Sending 8 Mb attachments _037", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1377,7 +1377,7 @@ test("Sending 8 Mb attachments _037", async () => {
 });
 
 test("Sending 8 Mb attachments _038", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1414,7 +1414,7 @@ test("Sending 8 Mb attachments _038", async () => {
 });
 
 test("Sending 8 Mb attachments _039", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1451,7 +1451,7 @@ test("Sending 8 Mb attachments _039", async () => {
 });
 
 test("Sending 8 Mb attachments _040", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1488,7 +1488,7 @@ test("Sending 8 Mb attachments _040", async () => {
 });
 
 test("Sending 8 Mb attachments _041", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1525,7 +1525,7 @@ test("Sending 8 Mb attachments _041", async () => {
 });
 
 test("Sending 8 Mb attachments _042", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1562,7 +1562,7 @@ test("Sending 8 Mb attachments _042", async () => {
 });
 
 test("Sending 8 Mb attachments _043", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1599,7 +1599,7 @@ test("Sending 8 Mb attachments _043", async () => {
 });
 
 test("Sending 8 Mb attachments _044", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1636,7 +1636,7 @@ test("Sending 8 Mb attachments _044", async () => {
 });
 
 test("Sending 8 Mb attachments _045", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1673,7 +1673,7 @@ test("Sending 8 Mb attachments _045", async () => {
 });
 
 test("Sending 8 Mb attachments _046", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1710,7 +1710,7 @@ test("Sending 8 Mb attachments _046", async () => {
 });
 
 test("Sending 8 Mb attachments _047", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1747,7 +1747,7 @@ test("Sending 8 Mb attachments _047", async () => {
 });
 
 test("Sending 8 Mb attachments _048", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1784,7 +1784,7 @@ test("Sending 8 Mb attachments _048", async () => {
 });
 
 test("Sending 8 Mb attachments _049", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1821,7 +1821,7 @@ test("Sending 8 Mb attachments _049", async () => {
 });
 
 test("Sending 8 Mb attachments _050", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1858,7 +1858,7 @@ test("Sending 8 Mb attachments _050", async () => {
 });
 
 test("Sending 8 Mb attachments _051", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1895,7 +1895,7 @@ test("Sending 8 Mb attachments _051", async () => {
 });
 
 test("Sending 8 Mb attachments _052", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1932,7 +1932,7 @@ test("Sending 8 Mb attachments _052", async () => {
 });
 
 test("Sending 8 Mb attachments _053", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -1969,7 +1969,7 @@ test("Sending 8 Mb attachments _053", async () => {
 });
 
 test("Sending 8 Mb attachments _054", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2006,7 +2006,7 @@ test("Sending 8 Mb attachments _054", async () => {
 });
 
 test("Sending 8 Mb attachments _055", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2043,7 +2043,7 @@ test("Sending 8 Mb attachments _055", async () => {
 });
 
 test("Sending 8 Mb attachments _056", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2080,7 +2080,7 @@ test("Sending 8 Mb attachments _056", async () => {
 });
 
 test("Sending 8 Mb attachments _057", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2117,7 +2117,7 @@ test("Sending 8 Mb attachments _057", async () => {
 });
 
 test("Sending 8 Mb attachments _058", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2154,7 +2154,7 @@ test("Sending 8 Mb attachments _058", async () => {
 });
 
 test("Sending 8 Mb attachments _059", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2191,7 +2191,7 @@ test("Sending 8 Mb attachments _059", async () => {
 });
 
 test("Sending 8 Mb attachments _060", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2228,7 +2228,7 @@ test("Sending 8 Mb attachments _060", async () => {
 });
 
 test("Sending 8 Mb attachments _061", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2265,7 +2265,7 @@ test("Sending 8 Mb attachments _061", async () => {
 });
 
 test("Sending 8 Mb attachments _062", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2302,7 +2302,7 @@ test("Sending 8 Mb attachments _062", async () => {
 });
 
 test("Sending 8 Mb attachments _063", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2339,7 +2339,7 @@ test("Sending 8 Mb attachments _063", async () => {
 });
 
 test("Sending 8 Mb attachments _064", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2376,7 +2376,7 @@ test("Sending 8 Mb attachments _064", async () => {
 });
 
 test("Sending 8 Mb attachments _065", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2413,7 +2413,7 @@ test("Sending 8 Mb attachments _065", async () => {
 });
 
 test("Sending 8 Mb attachments _066", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2450,7 +2450,7 @@ test("Sending 8 Mb attachments _066", async () => {
 });
 
 test("Sending 8 Mb attachments _067", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2487,7 +2487,7 @@ test("Sending 8 Mb attachments _067", async () => {
 });
 
 test("Sending 8 Mb attachments _068", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2524,7 +2524,7 @@ test("Sending 8 Mb attachments _068", async () => {
 });
 
 test("Sending 8 Mb attachments _069", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2561,7 +2561,7 @@ test("Sending 8 Mb attachments _069", async () => {
 });
 
 test("Sending 8 Mb attachments _070", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2598,7 +2598,7 @@ test("Sending 8 Mb attachments _070", async () => {
 });
 
 test("Sending 8 Mb attachments _071", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2635,7 +2635,7 @@ test("Sending 8 Mb attachments _071", async () => {
 });
 
 test("Sending 8 Mb attachments _072", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2672,7 +2672,7 @@ test("Sending 8 Mb attachments _072", async () => {
 });
 
 test("Sending 8 Mb attachments _073", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2709,7 +2709,7 @@ test("Sending 8 Mb attachments _073", async () => {
 });
 
 test("Sending 8 Mb attachments _074", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2746,7 +2746,7 @@ test("Sending 8 Mb attachments _074", async () => {
 });
 
 test("Sending 8 Mb attachments _075", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2783,7 +2783,7 @@ test("Sending 8 Mb attachments _075", async () => {
 });
 
 test("Sending 8 Mb attachments _076", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2820,7 +2820,7 @@ test("Sending 8 Mb attachments _076", async () => {
 });
 
 test("Sending 8 Mb attachments _077", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2857,7 +2857,7 @@ test("Sending 8 Mb attachments _077", async () => {
 });
 
 test("Sending 8 Mb attachments _078", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2894,7 +2894,7 @@ test("Sending 8 Mb attachments _078", async () => {
 });
 
 test("Sending 8 Mb attachments _079", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2931,7 +2931,7 @@ test("Sending 8 Mb attachments _079", async () => {
 });
 
 test("Sending 8 Mb attachments _080", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -2968,7 +2968,7 @@ test("Sending 8 Mb attachments _080", async () => {
 });
 
 test("Sending 8 Mb attachments _081", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3005,7 +3005,7 @@ test("Sending 8 Mb attachments _081", async () => {
 });
 
 test("Sending 8 Mb attachments _082", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3042,7 +3042,7 @@ test("Sending 8 Mb attachments _082", async () => {
 });
 
 test("Sending 8 Mb attachments _083", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3079,7 +3079,7 @@ test("Sending 8 Mb attachments _083", async () => {
 });
 
 test("Sending 8 Mb attachments _084", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3116,7 +3116,7 @@ test("Sending 8 Mb attachments _084", async () => {
 });
 
 test("Sending 8 Mb attachments _085", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3153,7 +3153,7 @@ test("Sending 8 Mb attachments _085", async () => {
 });
 
 test("Sending 8 Mb attachments _086", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3190,7 +3190,7 @@ test("Sending 8 Mb attachments _086", async () => {
 });
 
 test("Sending 8 Mb attachments _087", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3227,7 +3227,7 @@ test("Sending 8 Mb attachments _087", async () => {
 });
 
 test("Sending 8 Mb attachments _088", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3264,7 +3264,7 @@ test("Sending 8 Mb attachments _088", async () => {
 });
 
 test("Sending 8 Mb attachments _089", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3301,7 +3301,7 @@ test("Sending 8 Mb attachments _089", async () => {
 });
 
 test("Sending 8 Mb attachments _090", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3338,7 +3338,7 @@ test("Sending 8 Mb attachments _090", async () => {
 });
 
 test("Sending 8 Mb attachments _091", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3375,7 +3375,7 @@ test("Sending 8 Mb attachments _091", async () => {
 });
 
 test("Sending 8 Mb attachments _092", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3412,7 +3412,7 @@ test("Sending 8 Mb attachments _092", async () => {
 });
 
 test("Sending 8 Mb attachments _093", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3449,7 +3449,7 @@ test("Sending 8 Mb attachments _093", async () => {
 });
 
 test("Sending 8 Mb attachments _094", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3486,7 +3486,7 @@ test("Sending 8 Mb attachments _094", async () => {
 });
 
 test("Sending 8 Mb attachments _095", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3523,7 +3523,7 @@ test("Sending 8 Mb attachments _095", async () => {
 });
 
 test("Sending 8 Mb attachments _096", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3560,7 +3560,7 @@ test("Sending 8 Mb attachments _096", async () => {
 });
 
 test("Sending 8 Mb attachments _097", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3597,7 +3597,7 @@ test("Sending 8 Mb attachments _097", async () => {
 });
 
 test("Sending 8 Mb attachments _098", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3634,7 +3634,7 @@ test("Sending 8 Mb attachments _098", async () => {
 });
 
 test("Sending 8 Mb attachments _099", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {
@@ -3671,7 +3671,7 @@ test("Sending 8 Mb attachments _099", async () => {
 });
 
 test("Sending 8 Mb attachments _100", async () => {
-  await setup({ layer: "web" });
+  await setup({ layer: "web", feature: "Sending big attachments" });
   await allure.feature("Sending big attachments");
   await allure.story("Attach 'em big");
   if (maybe()) {

@@ -11,21 +11,20 @@ const allure = require("allure-js-commons");
 const FAIL_PROBABILITY = 0.1;
 
 // Epic = business area above Feature (Epic -> Feature -> Story).
-// Layer is reported separately via allure.layer(), so it no longer drives Epic.
 // Keys are lower-case feature names; add new features here as the project grows.
+// Unmapped features fall back to the layer-based epic in setup() (no "Other").
 const EPIC_BY_FEATURE = {
   checkout: "Purchasing",
   cart: "Purchasing",
+  "product catalog": "Catalog",
   authentication: "User account",
-  profile: "User account",
-  product: "Catalog",
-  search: "Catalog",
 };
-const DEFAULT_EPIC = "Other";
 
 function epicFor(feature) {
   if (!feature) return undefined;
-  return EPIC_BY_FEATURE[feature.toLowerCase()] ?? DEFAULT_EPIC;
+  const epic = EPIC_BY_FEATURE[feature.toLowerCase()];
+  if (!epic) console.warn(`[allure] No epic mapped for feature "${feature}"`);
+  return epic;
 }
 
 function shouldFail() {
@@ -54,19 +53,14 @@ async function assertStep(name, reason = "ODD") {
   });
 }
 
-// setup({ layer, owner, feature, story })
-//   feature -> sets Feature and derives Epic from EPIC_BY_FEATURE
-//   story   -> sets Story
-// If a spec already calls allure.feature()/allure.story() itself, remove those
-// calls and pass the values here instead, so labels are not duplicated.
-async function setup({ layer, owner, feature, story } = {}) {
+async function setup({ layer, owner, feature } = {}) {
   await applyGate();
   if (layer) await allure.layer(layer);
-  if (feature) {
-    await allure.epic(epicFor(feature));
-    await allure.feature(feature);
-  }
-  if (story) await allure.story(story);
+  const epic = epicFor(feature);
+  if (epic) await allure.epic(epic);
+  else if (layer === "unit") await allure.epic("BE unit tests");
+  else if (layer === "api") await allure.epic("BE tests");
+  else if (layer === "e2e" || layer === "web") await allure.epic("FE tests");
   if (owner) await allure.owner(owner);
 }
 
