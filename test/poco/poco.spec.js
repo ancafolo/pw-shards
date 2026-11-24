@@ -807,7 +807,7 @@ test("Assert a tuple poco 071 001", async () => {
 });
 
 
-test("Assert a tuple poco 072 001 edit @allure.id:85115", async () => {
+test("Assert a tuple poco 072 001", async () => {
   await setup({ layer: "integration", owner: "michael", feature: "checkout" });
   await allure.feature("checkout");
   await allure.story("Place an order");
